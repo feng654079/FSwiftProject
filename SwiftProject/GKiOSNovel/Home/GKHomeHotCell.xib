@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GKHomeHotCell" customModule="SwiftProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="472"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="472"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fjb-K2-SHF">
+                        <rect key="frame" x="0.0" y="0.0" width="293" height="395.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Fjb-K2-SHF" secondAttribute="height" multiplier="100:135" id="sDk-gl-G7G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJh-tM-BDJ">
+                        <rect key="frame" x="0.0" y="405.5" width="293" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOB-rG-B3t">
+                        <rect key="frame" x="8" y="8" width="239" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBl-fq-172">
+                        <rect key="frame" x="255" y="8" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1Ac-u3-ofX"/>
+                            <constraint firstAttribute="width" constant="30" id="I1K-Up-iCj"/>
+                        </constraints>
+                        <state key="normal" image="icon_delete"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NBl-fq-172" secondAttribute="trailing" constant="8" id="76V-74-Aig"/>
+                <constraint firstItem="NBl-fq-172" firstAttribute="leading" secondItem="ZOB-rG-B3t" secondAttribute="trailing" constant="8" id="7zb-0m-EPT"/>
+                <constraint firstItem="Fjb-K2-SHF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cqd-1e-e3t"/>
+                <constraint firstItem="xJh-tM-BDJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Da9-PQ-lTz"/>
+                <constraint firstItem="xJh-tM-BDJ" firstAttribute="top" secondItem="Fjb-K2-SHF" secondAttribute="bottom" constant="10" id="Gbj-WQ-uXA"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xJh-tM-BDJ" secondAttribute="bottom" id="NSV-Pp-Tqa"/>
+                <constraint firstAttribute="trailing" secondItem="Fjb-K2-SHF" secondAttribute="trailing" id="SQR-U9-gNj"/>
+                <constraint firstItem="Fjb-K2-SHF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XA8-FI-ixK"/>
+                <constraint firstItem="ZOB-rG-B3t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="a4t-f8-ee7"/>
+                <constraint firstAttribute="trailing" secondItem="xJh-tM-BDJ" secondAttribute="trailing" id="gYT-i4-aUd"/>
+                <constraint firstItem="NBl-fq-172" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="v2f-DW-Y7F"/>
+                <constraint firstItem="ZOB-rG-B3t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="v8x-am-1uZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="293" height="472"/>
+            <connections>
+                <outlet property="deletBtn" destination="NBl-fq-172" id="EfL-nI-9uo"/>
+                <outlet property="imageV" destination="Fjb-K2-SHF" id="oX0-XO-Dht"/>
+                <outlet property="tagLabel" destination="ZOB-rG-B3t" id="L6I-nr-Mmq"/>
+                <outlet property="titleLabel" destination="xJh-tM-BDJ" id="G4L-bG-iNH"/>
+            </connections>
+            <point key="canvasLocation" x="-31.159420289855074" y="99.776785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_delete" width="25" height="25"/>
+    </resources>
+</document>

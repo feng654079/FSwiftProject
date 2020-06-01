@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="GKHomeHeaderReusableView" customModule="SwiftProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVD-ov-lE7">
+                    <rect key="frame" x="15" y="37" width="238" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIA-M5-qG2">
+                    <rect key="frame" x="268" y="36.5" width="55" height="22"/>
+                    <state key="normal" title="更多" image="icon_more">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="uVD-ov-lE7" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="15" id="1jj-yh-4Qe"/>
+                <constraint firstItem="yIA-M5-qG2" firstAttribute="centerY" secondItem="uVD-ov-lE7" secondAttribute="centerY" id="2Oe-e1-Fl3"/>
+                <constraint firstItem="uVD-ov-lE7" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="DLd-fM-JfU"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="yIA-M5-qG2" secondAttribute="trailing" constant="16" id="PRg-pA-OZS"/>
+                <constraint firstItem="yIA-M5-qG2" firstAttribute="leading" secondItem="uVD-ov-lE7" secondAttribute="trailing" constant="15" id="v9a-Sh-u9t"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="moreBtn" destination="yIA-M5-qG2" id="xhX-kt-0rL"/>
+                <outlet property="titleLabel" destination="uVD-ov-lE7" id="FSF-Ot-nEo"/>
+            </connections>
+            <point key="canvasLocation" x="-292" y="110"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icon_more" width="18" height="18"/>
+    </resources>
+</document>
